@@ -199,20 +199,20 @@ void addOrSubtract(int alarmArray[], int timeUntil, int time[]){
     cin.clear();
     cin.ignore(100,'\n');
     if(letterOptionB == 'a' && timeAdd[0]>=0&& timeAdd[1]>=0 && timeAdd[2]>=0){
-      //clockAscender(timeAdd[]);
+      clockAscender(timeAdd);
       time[0] = time[0] + timeAdd[0];
       time[1] = time[1] + timeAdd[1];
       time[2] = time[2] + timeAdd[2];
       letterOptionB = ' ';
-      //clockAscender(time[]);
+      clockAscender(time);
      }else if(letterOptionB == 's' && 
              (time[0]- timeAdd[0]) + (time[1]- timeAdd[1]) + (time[2]- timeAdd[2]) > 0 && timeAdd[0]>=0&& timeAdd[1]>=0 && timeAdd[2]>=0){
-        //clockAscender(timeAdd[]);
+        clockAscender(timeAdd);
         time[0] = time[0] - timeAdd[0];
         time[1] = time[1] - timeAdd[1];
         time[2] = time[2] - timeAdd[2];
         letterOptionB = ' ';
-        //clockAscender(time[]);
+        clockAscender(time);
     }else{
       cout << endl << endl << "error:either you entered a negative or subtracting you numbers would make your alarm a negative, don't do that";
     };
