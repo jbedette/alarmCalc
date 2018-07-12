@@ -1,11 +1,3 @@
-/*to do
- * 1: put in addition subtraction functionality
- * 2: get the time more accurate
- * 3: maybe do more with the time thing(get it to read out 8:30 etc.
- * 4. clean and comment*/
-
-
-
 #include <iostream>
 #include <ctime>
 #include <math.h>
@@ -233,11 +225,3 @@ void clockAscender(int time[]){
   time[1] = min;
   time[0] = hour;
 };
-//void updateAlarm(int time[],int &timeUntil){ 
-//     timeUntil = (time[0] * 60 * 60) + (time[1] *60)
- //             + time[2] + t - tUpdating;
-//};
-
-  //time gettting https://stackoverflow.com/questions/997946/how-to-get-current-time-and-date-in-c
-  //used this ot figure out how to get system time and make an actual
-  //countdown. 
